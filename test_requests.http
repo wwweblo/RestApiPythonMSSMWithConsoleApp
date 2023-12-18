@@ -1,0 +1,23 @@
+### POST запрос для добавления нового аккаунта
+POST http://localhost:5000/account
+Content-Type: application/json
+
+{
+  "login": "newuser",
+  "password": "newpassword"
+}
+
+### GET запрос для получения всех аккаунтов
+GET http://localhost:5000/accounts
+
+### PUT запрос для обновления существующего аккаунта
+PUT http://localhost:5000/account/1
+Content-Type: application/json
+
+{
+  "login": "updateduser",
+  "password": "updatedpassword"
+}
+
+### DELETE запрос для удаления аккаунта
+DELETE http://localhost:5000/account/1
